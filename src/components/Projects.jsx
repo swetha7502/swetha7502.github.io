@@ -61,7 +61,7 @@ const projects = [
   {
     name: "MedHelp",
     stack: ["Java", "JSP", "JS"],
-    github: "#",
+    github: "https://github.com/swetha7502/MedHelp",
     image: "/logos/medhelp.png",
     summary: "A web-based platform that allows users to easily browse, order, and manage medications online."
   }
