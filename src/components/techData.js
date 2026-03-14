@@ -114,7 +114,7 @@ export const techStack = [
             },
             {
                 name: "Tableau",
-                logo: "public/logos/tab.png"
+                logo: "logos/tab.png"
             },
             {
                 name: "Scikit-Learn",
@@ -144,7 +144,7 @@ export const techStack = [
             },
             {
                 name: "Oracle APEX",
-                logo: "public/logos/apex.png"
+                logo: "logos/apex.png"
             },
             {
                 name: "Git",

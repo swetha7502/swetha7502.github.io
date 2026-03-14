@@ -14,7 +14,7 @@ export default function About() {
                 <div className="flex justify-center">
 
                     <img
-                        src="public/logos/me.jpg"
+                        src="logos/me.jpg"
                         className="w-72 rounded-xl shadow-2xl"
                     />
 
