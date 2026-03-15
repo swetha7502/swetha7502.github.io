@@ -3,9 +3,10 @@ import { useState } from "react"
 const projects = [
   {
     name: "Amphibious Housing for Flood Resilience",
-    stack: ["In Progress!"],
+    stack: [],
     github: "#",
     image: "/logos/flood.png",
+    inProgress: true,
     summary: "Designing adaptive housing structures that float during floods to improve disaster resilience and safety, enhanced with smart devices."
   },
   {
@@ -13,6 +14,7 @@ const projects = [
     stack: ["C#","MatLab"],
     github: "#",
     image: "/logos/atom.jpg",
+    inProgress: true,
     summary: "Modeling and predicting the behavior of water molecules with proteins using molecular dynamics simulations and numerical analysis."
     
   },
@@ -32,35 +34,35 @@ const projects = [
   },
   {
     name: "Left Ventricular Ejection Fraction Estimation using CNN",
-    stack: ["Python", "Flask", "JS"],
-    github: "#",
+    stack: ["Python", "CNN", "Keras","OpenCV","Tensorflow"],
+    github: "https://ieeexplore.ieee.org/document/10395284",
     image: "/logos/EF.webp",
     summary: "Using deep learning to estimate heart ejection fraction from medical imaging for cardiac analysis."
   },
   {
     name: "DeepFake Video Detection using E2TC-Net",
-    stack: ["Python", "Flask", "JS"],
+    stack: ["Python", "TensorFLow", "Transformers","CNN"],
     github: "#",
     image: "/logos/deepfake.jpg",
     summary: "Implementing a deep learning model to detect manipulated or deepfake videos."
   },
   {
     name: "BlogLite",
-    stack: ["Python", "Flask", "JS"],
+    stack: ["Python", "Flask", "Redis","SQLite","Vue.js"],
     github: "https://github.com/swetha7502/BlogLite",
     image: "/logos/blog.png",
     summary: "A lightweight blogging platform for creating, managing, and publishing posts."
   },
   {
     name: "Quantified-Self",
-    stack: ["Python", "Flask", "JS"],
+    stack: ["Python", "JavaScript", "Flask","SQLite"],
     github: "https://github.com/swetha7502/Quantified-Self-App",
     image: "/logos/qs.png",
     summary: "A personal tracking application that helps users monitor habits, activities, and productivity."
   },
   {
     name: "MedHelp",
-    stack: ["Java", "JSP", "JS"],
+    stack: ["Java", "JSP", "JavaScript"],
     github: "https://github.com/swetha7502/MedHelp",
     image: "/logos/medhelp.png",
     summary: "A web-based platform that allows users to easily browse, order, and manage medications online."
@@ -142,17 +144,31 @@ function FlipCard({ project }) {
 
             {/* LINKS */}
 
-            <div className="flex gap-4 text-sm">
+             {project.inProgress ? (
 
-              <a
-                href={project.github} target="_blank"
-                className="text-blue-400 hover:underline"
-              >
-                GitHub
-              </a>
+              <div className="flex items-center gap-2 text-yellow-300 text-xs">
 
+                <span className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></span>
 
-            </div>
+                In Progress
+
+              </div>
+
+            ) : (
+
+              <div className="flex gap-4 text-sm">
+
+                <a
+                  href={project.github}
+                  target="_blank"
+                  className="text-blue-400 hover:underline"
+                >
+                  GitHub
+                </a>
+
+              </div>
+
+            )}
 
           </div>
 
