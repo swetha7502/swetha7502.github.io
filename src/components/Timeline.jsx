@@ -1,5 +1,4 @@
 const timeline = [
-
     {
         year: "2025-2027",
         title: "M.S Computer Science",
@@ -36,7 +35,6 @@ const timeline = [
         place: "IIT Madras",
         logo: "/logos/iitm.png"
     }
-
 ]
 
 

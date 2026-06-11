@@ -37,7 +37,33 @@ export const techStack = [
                 name: "Flask",
                 logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"
             },
-             {
+             
+            {
+                name: "React",
+                logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+            },
+            {
+                name: "Node.js",
+                logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+            },
+            {
+                name: "Vue.js",
+                logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg"
+            },
+            {
+                name: "Next.js",
+                logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+          
+            },
+            {
+                name: "TypeScript",
+                logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+            },
+            {
+                name: "FastAPI",
+                logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg"
+            },
+            {
                 name: "HTML5",
                 logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
             },
@@ -48,22 +74,6 @@ export const techStack = [
              {
                 name: "BootStrap",
                 logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
-            },
-            {
-                name: "React",
-                logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-            },
-            {
-                name: "Node.js",
-                logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-            },
-            {
-                name: "Express",
-                logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-            },
-            {
-                name: "Vue",
-                logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg"
             },
             
         ]
@@ -98,8 +108,28 @@ export const techStack = [
         ]
     },
         {
-        category: "ML & Data Science",
+        category: "AI & ML",
         items: [
+            {
+                name: "LangChain",
+                logo: "logos/langchain.png"
+            },
+            {
+                name: "RAG",
+                logo: "logos/rap.jpg"
+            },
+            {
+                name: "LangSmith",
+                logo: "logos/langsmith.png"
+            },
+            {
+                name: "LangGraph",
+                logo: "logos/langraph.png"
+            },
+            {
+                name: "ChromaDB",
+                logo: "logos/chromadb.png"
+            },
             {
                 name: "TensorFLow",
                 logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg"
@@ -109,8 +139,8 @@ export const techStack = [
                 logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/keras/keras-original.svg"
             },
             {
-                name: "Pandas",
-                logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
+                name: "PyTorch",
+                logo: "logos/pytorch.png"
             },
             {
                 name: "Tableau",

@@ -9,7 +9,7 @@ export default function Navbar(){
 
     <div className="flex gap-8 ml-auto">
             <a
-href="./swetha_final_resume.pdf"
+href="./swetha_new_resume.pdf"
 download
 className="fixed top-3 left-6 z-50 px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg hover:bg-white/20 transition"
 >
@@ -22,6 +22,7 @@ Download CV
           <Link to="timeline" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300">Experience</Link>
           <Link to="projects" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300">Projects</Link>
           <Link to="contact" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300">Contact</Link>
+          
 
         </div>
 
