@@ -16,6 +16,7 @@ const categories = [
         name: "Medical Research Multi-Agent System",
         stack: ["LangChain", "LangGraph", "ChromaDB", "Next.js", "TypeScript","FastAPI"],
         github: "https://github.com/swetha7502/Text-Based-Image-Modification-for-Content-Creation",
+        demo: "https://medical-research-agent-swart.vercel.app/",
         image: "/logos/medi.png",
         inProgress: false,
         summary: "A text-guided image editing system that lets users modify photos using plain English prompts. Built a full pipeline combining Grounded-DINO, SAM, and LaMa inpainting for object detection, segmentation, and removal — running entirely on CPU without cloud dependencies."
@@ -225,6 +226,11 @@ function FlipCard({ project }) {
                 <a href={project.github} target="_blank" className="text-blue-400 hover:underline">
                   GitHub
                 </a>
+                {project.demo && (
+  <a href={project.demo} target="_blank" className="text-blue-400 hover:underline">
+    Demo
+  </a>
+)}
               </div>
             )}
           </div>
