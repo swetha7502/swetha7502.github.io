@@ -19,7 +19,7 @@ const categories = [
         demo: "https://medical-research-agent-swart.vercel.app/",
         image: "/logos/medi.png",
         inProgress: false,
-        summary: "A text-guided image editing system that lets users modify photos using plain English prompts. Built a full pipeline combining Grounded-DINO, SAM, and LaMa inpainting for object detection, segmentation, and removal — running entirely on CPU without cloud dependencies."
+        summary: "n AI-powered clinical research assistant that uses a LangGraph pipeline of three specialized agents (Retriever, Fact-Checker, Synthesizer) to search PubMed and arXiv in real time, evaluate evidence quality, and return cited, confidence-graded answers to medical questions. Built with FastAPI, Next.js 15, ChromaDB, and OpenAI."
       },
       {
         name: "Text Based Image Modification for Content Creation",
