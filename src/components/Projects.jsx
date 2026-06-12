@@ -5,6 +5,14 @@ const categories = [
     label: "AI / ML",
     projects: [
       {
+        name: "ConflictMind",
+        stack: ["Google ADK", "Gemini", "Vertex AI", "MongoDB Atlas", "Flask", "Python"],
+        github: "https://github.com/nitin-s17/conflictmind-memory",
+        image: "/logos/conflictmind.jpeg",
+        inProgress: false,
+        summary: "An AI agent with persistent memory that detects contradictory facts about a user across conversations and resolves them through a structured 3-step adversarial Gemini debate — two memories argue their case, a judge synthesizes a unified truth, and the full debate history is stored in MongoDB Atlas."
+      },
+      {
         name: "Medical Research Multi-Agent System",
         stack: ["LangChain", "LangGraph", "ChromaDB", "Next.js", "TypeScript","FastAPI"],
         github: "https://github.com/swetha7502/Text-Based-Image-Modification-for-Content-Creation",
@@ -118,11 +126,19 @@ const hackathons = [
   {
     name: "SideQuest - Turning wait time into time well spent",
     hackathon: "MeDo Hackathon 2026",
-    description: "",
+    description: "SideQuest is a full-stack web app built for the MeDo Hackathon that transforms dead waiting room time into engaging micro-experiences. Patients scan a QR code, join a live queue, and choose from AI-powered mini-games and content — while businesses manage their waiting room through a real-time dashboard.",
     link: "https://devpost.com/software/sidequest-turning-wait-time-into-time-well-spent",
     stack: ["cerebras", "googleAIStudio","groq","react","supabase","vite"],
     //award: "Best Use of AI", // optional
   },
+  {
+  name: "ConflictMind - AI agent that debates its own memories",
+  hackathon: "Google Rapid Agent Hackathon 2026",
+  description: "An AI agent with persistent memory that detects contradictions across conversations and resolves them through a structured 3-step adversarial Gemini debate — transparent, auditable memory reconciliation stored in MongoDB Atlas.",
+  link: "https://devpost.com/software/conflictmind", // update with your actual devpost URL
+  stack: ["googleADK", "gemini", "vertexAI", "mongodb", "flask", "python"],
+  //award: "Best Use of MongoDB", // remove if no award
+},
 ]
 
 export default function Projects() {
