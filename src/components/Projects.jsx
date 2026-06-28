@@ -18,6 +18,7 @@ const categories = [
         name: "ConflictMind",
         stack: ["Google ADK", "Gemini", "Vertex AI", "MongoDB Atlas", "Flask", "Python"],
         github: "https://github.com/nitin-s17/conflictmind-memory",
+        demo: "https://conflictmind-674810100969.us-central1.run.app",
         image: "/logos/conflictmind.jpeg",
         inProgress: false,
         summary: "An AI agent with persistent memory that detects contradictory facts about a user across conversations and resolves them through a structured 3-step adversarial Gemini debate — two memories argue their case, a judge synthesizes a unified truth."
