@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react"
 
 const lines = [
-  { prefix: "const", name: " roles",   value: ' = "Software Engineer"' },
-  { prefix: "const", name: " focus",  value: ' = ["AI", "Backend", "FullStack","Systems"]' },
+  { prefix: "const", name: " roles", value: ' = "Software Engineer"' },
+  { prefix: "const", name: " focus", value: ' = ["AI", "Backend", "FullStack","Systems"]' },
   { prefix: "const", name: " university", value: ' = "Penn State University"' },
-  { prefix: "const", name: " status", value: ' = "Open to opportunities ✦"' },
+  { prefix: "const", name: " status", value: ' = "Open to opportunities ✦"', highlight: true },
 ]
 
 const heroLines = [
@@ -68,13 +68,12 @@ export default function About() {
         {heroDisplayed.map((line, i) => (
           <p
             key={i}
-            className={`leading-snug ${
-              i === 0
+            className={`leading-snug ${i === 0
                 ? "text-3xl md:text-5xl font-bold text-white"
                 : i === 1
-                ? "text-lg md:text-2xl text-cyan-400"
-                : "text-sm md:text-base text-white/40"
-            }`}
+                  ? "text-lg md:text-2xl text-cyan-400"
+                  : "text-sm md:text-base text-white/40"
+              }`}
           >
             {line}
           </p>
@@ -135,15 +134,18 @@ export default function About() {
                 <span className="text-purple-400">{l.prefix}</span>
                 <span className="text-cyan-300">{l.name}</span>
                 <span className="text-white/30">=</span>
-                <span className="text-emerald-300">{l.value}</span>
+                {l.highlight ? (
+                  <span className="animate-pulse bg-green-500/20 text-green-400 px-1.5 py-0.5 rounded">
+                    {l.value}
+                  </span>
+                ) : (
+                  <span className="text-emerald-300">{l.value}</span>
+                )}
                 {i === typed - 1 && typed < lines.length && (
                   <span className="inline-block w-[2px] h-[1em] bg-cyan-400 animate-pulse ml-0.5 translate-y-[3px]" />
                 )}
               </div>
             ))}
-            {typed === lines.length && (
-              <span className="inline-block w-[2px] h-[1em] bg-cyan-400 animate-pulse translate-y-[3px]" />
-            )}
           </div>
 
           {/* about me footer */}

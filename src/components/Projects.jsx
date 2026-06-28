@@ -5,21 +5,31 @@ const categories = [
     label: "AI / ML",
     projects: [
       {
+        name: "Codebase Intel",
+        stack: ["FastAPI", "React", "pgvector", "Celery", "tree-sitter", "OpenAI", "GCP Cloud Run"],
+        github: "https://github.com/swetha7502/codebase-intel",
+        demo: "https://codebase-intel-frontend-kteuihegea-uc.a.run.app",
+        image: "/logos/codebase.png",
+        inProgress: false,
+        summary: "An AI-powered code exploration tool that indexes any public GitHub repository and enables dependency graph visualization, semantic symbol search, and natural language Q&A over the codebase — powered by OpenAI embeddings stored in pgvector and a multi-language parser pipeline built with Python AST and tree-sitter."
+      },
+
+      {
         name: "ConflictMind",
         stack: ["Google ADK", "Gemini", "Vertex AI", "MongoDB Atlas", "Flask", "Python"],
         github: "https://github.com/nitin-s17/conflictmind-memory",
         image: "/logos/conflictmind.jpeg",
         inProgress: false,
-        summary: "An AI agent with persistent memory that detects contradictory facts about a user across conversations and resolves them through a structured 3-step adversarial Gemini debate — two memories argue their case, a judge synthesizes a unified truth, and the full debate history is stored in MongoDB Atlas."
+        summary: "An AI agent with persistent memory that detects contradictory facts about a user across conversations and resolves them through a structured 3-step adversarial Gemini debate — two memories argue their case, a judge synthesizes a unified truth."
       },
       {
         name: "Medical Research Multi-Agent System",
-        stack: ["LangChain", "LangGraph", "ChromaDB", "Next.js", "TypeScript","FastAPI"],
+        stack: ["LangChain", "LangGraph", "ChromaDB", "Next.js", "TypeScript", "FastAPI"],
         github: "https://github.com/swetha7502/Text-Based-Image-Modification-for-Content-Creation",
         demo: "https://medical-research-agent-swart.vercel.app/",
         image: "/logos/medi.png",
         inProgress: false,
-        summary: "n AI-powered clinical research assistant that uses a LangGraph pipeline of three specialized agents (Retriever, Fact-Checker, Synthesizer) to search PubMed and arXiv in real time, evaluate evidence quality, and return cited, confidence-graded answers to medical questions. Built with FastAPI, Next.js 15, ChromaDB, and OpenAI."
+        summary: "AI-powered clinical research assistant that uses a LangGraph pipeline of three specialized agents (Retriever, Fact-Checker, Synthesizer) to search PubMed and arXiv in real time, evaluate evidence quality, and return cited, confidence-graded answers to medical questions."
       },
       {
         name: "Text Based Image Modification for Content Creation",
@@ -50,7 +60,7 @@ const categories = [
         image: "/logos/deepfake.jpg",
         summary: "Implementing a deep learning model to detect manipulated or deepfake videos."
       },
-      
+
     ]
   },
   {
@@ -129,17 +139,17 @@ const hackathons = [
     hackathon: "MeDo Hackathon 2026",
     description: "SideQuest is a full-stack web app built for the MeDo Hackathon that transforms dead waiting room time into engaging micro-experiences. Patients scan a QR code, join a live queue, and choose from AI-powered mini-games and content — while businesses manage their waiting room through a real-time dashboard.",
     link: "https://devpost.com/software/sidequest-turning-wait-time-into-time-well-spent",
-    stack: ["cerebras", "googleAIStudio","groq","react","supabase","vite"],
+    stack: ["cerebras", "googleAIStudio", "groq", "react", "supabase", "vite"],
     //award: "Best Use of AI", // optional
   },
   {
-  name: "ConflictMind - AI agent that debates its own memories",
-  hackathon: "Google Rapid Agent Hackathon 2026",
-  description: "An AI agent with persistent memory that detects contradictions across conversations and resolves them through a structured 3-step adversarial Gemini debate — transparent, auditable memory reconciliation stored in MongoDB Atlas.",
-  link: "https://devpost.com/software/conflictmind", // update with your actual devpost URL
-  stack: ["googleADK", "gemini", "vertexAI", "mongodb", "flask", "python"],
-  //award: "Best Use of MongoDB", // remove if no award
-},
+    name: "ConflictMind - AI agent that debates its own memories",
+    hackathon: "Google Rapid Agent Hackathon 2026",
+    description: "An AI agent with persistent memory that detects contradictions across conversations and resolves them through a structured 3-step adversarial Gemini debate — transparent, auditable memory reconciliation stored in MongoDB Atlas.",
+    link: "https://devpost.com/software/conflictmind", // update with your actual devpost URL
+    stack: ["googleADK", "gemini", "vertexAI", "mongodb", "flask", "python"],
+    //award: "Best Use of MongoDB", // remove if no award
+  },
 ]
 
 export default function Projects() {
@@ -227,10 +237,10 @@ function FlipCard({ project }) {
                   GitHub
                 </a>
                 {project.demo && (
-  <a href={project.demo} target="_blank" className="text-blue-400 hover:underline">
-    Demo
-  </a>
-)}
+                  <a href={project.demo} target="_blank" className="text-blue-400 hover:underline">
+                    Demo
+                  </a>
+                )}
               </div>
             )}
           </div>

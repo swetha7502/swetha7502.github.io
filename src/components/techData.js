@@ -116,7 +116,7 @@ export const techStack = [
             },
             {
                 name: "RAG",
-                logo: "logos/rag.jpg"
+                logo: "logos/rag.webp"
             },
             {
                 name: "LangSmith",

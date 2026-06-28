@@ -33,7 +33,7 @@ const timeline = [
         year: "2020-2024",
         title: "B.S Data Science & Programming(Hybrid)",
         place: "IIT Madras",
-        logo: "/logos/iitm.png"
+        logo: "/logos/iitm.svg"
     }
 ]
 
