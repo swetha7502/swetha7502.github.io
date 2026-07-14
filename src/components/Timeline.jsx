@@ -1,36 +1,49 @@
 const timeline = [
     {
-        year: "2025-2027",
-        title: "M.S Computer Science",
-        place: "The Pennsylvania State University",
+        year: "Jul 2026 - Present",
+        title: "AI Solutions Intern - Sustainability Platform",
+        place: "Pennsylvania State University",
         logo: "/logos/psu.png"
     },
     {
-        year: "2024-2025",
+        year: "Jan 2026 - May 2026",
+        title: "Research Assistant",
+        place: "Pennsylvania State University",
+        logo: "/logos/psu.png"
+    },
+    
+    {
+        year: "Aug 2025 - Present",
+        title: "M.S Computer Science",
+        place: "Pennsylvania State University",
+        logo: "/logos/psu.png"
+    },
+    {
+        year: "Aug 2024 - Aug 2025",
         title: "Associate Applications Developer",
         place: "Oracle",
         logo: "/logos/oracle.png"
     },
     {
-        year: "2024-2024",
+        year: "Jan 2024 - Jul 2024",
         title: "Project Intern",
         place: "Oracle",
         logo: "/logos/oracle.png"
     },
     {
-        year: "2023-2023",
+        year: "Jun 2023 - Aug 2023",
         title: "Summer Intern",
         place: "Citi",
         logo: "/logos/citi.jpg"
     },
     {
-        year: "2020-2024",
+        year: "Nov 2020 - May 2024",
         title: "B.Eng Computer Science",
         place: "Anna University",
         logo: "/logos/annauni.png"
     },
     {
-        year: "2020-2024",
+        year: "Nov 2020 - May 2024",
         title: "B.S Data Science & Programming(Hybrid)",
         place: "IIT Madras",
         logo: "/logos/iitm.svg"
