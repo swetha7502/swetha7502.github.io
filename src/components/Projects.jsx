@@ -41,13 +41,6 @@ const categories = [
         summary: "A text-guided image editing system that lets users modify photos using plain English prompts. Built a full pipeline combining Grounded-DINO, SAM, and LaMa inpainting for object detection, segmentation, and removal — running entirely on CPU without cloud dependencies."
       },
       {
-        name: "Music Genre Classification",
-        stack: ["Python", "Streamlit"],
-        github: "https://github.com/swetha7502/music-genre-classification",
-        image: "/logos/genre.png",
-        summary: "Simple machine learning model that classifies songs into genres based on audio features."
-      },
-      {
         name: "Left Ventricular Ejection Fraction Estimation using CNN",
         stack: ["Python", "CNN", "Keras", "OpenCV", "TensorFlow"],
         github: "https://ieeexplore.ieee.org/document/10395284",
@@ -149,6 +142,14 @@ const hackathons = [
     description: "An AI agent with persistent memory that detects contradictions across conversations and resolves them through a structured 3-step adversarial Gemini debate — transparent, auditable memory reconciliation stored in MongoDB Atlas.",
     link: "https://devpost.com/software/conflictmind", // update with your actual devpost URL
     stack: ["googleADK", "gemini", "vertexAI", "mongodb", "flask", "python"],
+    //award: "Best Use of MongoDB", // remove if no award
+  },
+  {
+    name: "Out of Office Negotiation Agent",
+    hackathon: "Slack Agent Builder Hackathon 2026",
+    description: "Slack bot where every person has an agent that negotiates task reassignment when they go OOO — deterministic rules, human-confirmed, with live workspace search via Slack's Real-Time Search API.",
+    link: "https://devpost.com/software/ooo-negotiation-agent", // update with your actual devpost URL
+    stack: ["groq", "javascript", "slack-api", "slack-bolt", "node.js", "rts-api","llama-3.3"],
     //award: "Best Use of MongoDB", // remove if no award
   },
 ]
