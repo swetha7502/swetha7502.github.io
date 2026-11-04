@@ -9,19 +9,21 @@ export default function Navbar(){
 
     <div className="flex gap-8 ml-auto">
             <a
-href="./swetha_resume_v4.pdf"
+href="./swetha_resume_v6.pdf"
 download
-className="fixed top-3 left-6 z-50 px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg hover:bg-white/20 transition"
+className="fixed top-3 left-6 z-50 px-4 py-2 text-white bg-white/10 backdrop-blur-md border border-white/20 rounded-lg hover:bg-white/20 transition"
 >
 
 Download CV
 
 </a>
-          <Link to="about" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300">About</Link>
-          <Link to="techstack" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300">Skills</Link>
-          <Link to="timeline" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300">Experience</Link>
-          <Link to="projects" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300">Projects</Link>
-          <Link to="contact" smooth={true} duration={500} className="cursor-pointer hover:text-gray-300">Contact</Link>
+          <Link to="about" smooth={true} duration={500} className="cursor-pointer text-white hover:text-gray-300">About</Link>
+          <Link to="techstack" smooth={true} duration={500} className="cursor-pointer text-white hover:text-gray-300">Skills</Link>
+          <Link to="timeline" smooth={true} duration={500} className="cursor-pointer text-white hover:text-gray-300">Experience</Link>
+          <Link to="projects" smooth={true} duration={500} className="cursor-pointer text-white hover:text-gray-300">Projects</Link>
+          <Link to="hackathons" smooth={true} duration={500} className="cursor-pointer text-white hover:text-gray-300">Hackathons</Link>
+          <Link to="certifications" smooth={true} duration={500} className="cursor-pointer text-white hover:text-gray-300">Certifications</Link>
+          <Link to="contact" smooth={true} duration={500} className="cursor-pointer text-white hover:text-gray-300">Contact</Link>
           
 
         </div>

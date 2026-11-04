@@ -75,6 +75,10 @@ export const techStack = [
                 name: "BootStrap",
                 logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
             },
+            {
+                name: "REST APIs",
+                logo: "logos/rest_api.jpg"
+            }
             
         ]
     },
@@ -149,6 +153,18 @@ export const techStack = [
             {
                 name: "Scikit-Learn",
                 logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"
+            },
+            {
+                name: "OpenCV",
+                logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg"
+            },
+            {
+                name: "GitHub Copilot",
+                logo: "logos/github_copilot.webp"
+            },
+            {
+                name: "Claude Code",
+                logo: "logos/claude_code.jpg"
             }
         ],
         
@@ -162,7 +178,7 @@ export const techStack = [
             },
             {
                 name: "AWS",
-                logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                logo: "logos/aws.svg"
             },
             {
                 name: "GCP",
@@ -187,6 +203,26 @@ export const techStack = [
             {
                 name: "Kubernetes",
                 logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg"
+            },
+            {
+                name: "Linux",
+                logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
+            },
+            {
+                name: "Terraform",
+                logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original.svg"
+            },
+            {
+                name: "GitHub Actions",
+                logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg"
+            },
+            {
+                name: "Celery",
+                logo: "logos/celery.webp"
+            },
+            {
+                name: "CI/CD",
+                logo: "logos/cicd.jpg"
             }
         ],
         

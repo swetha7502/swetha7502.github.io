@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 
 const lines = [
   { prefix: "const", name: " roles", value: ' = "Software Engineer"' },
-  { prefix: "const", name: " focus", value: ' = ["AI", "Backend", "FullStack","Systems"]' },
+  { prefix: "const", name: " focus", value: ' = ["AI", "Backend", "FullStack", "Systems", "DevOps"]' },
   { prefix: "const", name: " university", value: ' = "Penn State University"' },
   { prefix: "const", name: " status", value: ' = "Open to opportunities ✦"', highlight: true },
 ]
@@ -61,7 +61,7 @@ export default function About() {
   }, [heroLineIndex, heroCharIndex, heroDone])
 
   return (
-    <section id="about" className="min-h-screen py-20 px-6 flex flex-col items-center justify-center gap-10">
+    <section id="about" className="min-h-screen py-16 px-6 flex flex-col items-center justify-center gap-6">
 
       {/* ── Hero typing text ── */}
       <div className="text-center font-mono space-y-1">
@@ -82,13 +82,13 @@ export default function About() {
       </div>
 
       {/* ── Card ── */}
-      <div className="max-w-5xl w-full rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur overflow-hidden grid md:grid-cols-[280px_1fr]">
+      <div className="max-w-5xl w-full rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur overflow-hidden grid md:grid-cols-[340px_1fr]">
 
         {/* ── LEFT panel ── */}
         <div className="flex flex-col items-center justify-center gap-5 p-8 border-r border-white/10">
           <img
-            src="logos/mee.jpg"
-            className="w-40 h-40 rounded-xl object-cover object-top"
+            src="logos/me_pt2.jpeg"
+            className="w-56 h-56 md:w-72 md:h-72 rounded-xl object-cover object-[center_20%] ring-2 ring-cyan-500/30"
           />
 
           <div className="text-center">
@@ -152,9 +152,7 @@ export default function About() {
           <div className="px-6 pb-6 pt-4 border-t border-white/10">
             <p className="text-xs text-white/25 mb-2 font-mono">// about me</p>
             <p className="text-sm text-white/60 font-sans leading-relaxed">
-              I build scalable back-end systems and data-driven applications.
-              Deeply interested in machine learning, databases, and infrastructure by
-              turning complex problems into production-ready solutions with real-world impact.
+              I build reliable backend systems and full-stack products, from database design to CI/CD and production deploys. Lately I’ve been focused on making AI agents safe to ship.
             </p>
           </div>
         </div>
